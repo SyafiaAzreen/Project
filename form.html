@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.10.0.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">WELCOME TO PERFUME COLLECTION </h1>
+
+    <ul class="menu_ul">
+        <ul class="menu_ul li">
+            <ul class="menu_ul a">
+                <ul class="menu_ul a:hover">
+
+                    <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+                    <li menu="menu_ul"><a href="gallery.html" target="location">List of Product</a></li>
+                    <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+                    <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+
+    <div data-role="header">
+        <h1>ORDER FORM</h1>
+    </div><!-- /header -->
+    <div data-role="main" class="ui-content">
+        <center>
+            <div id="formtest">
+                <form name="myForm" action="#" method="post" enctype="multipart/form-data" id="myForm"
+                    onsubmit="return onsubmitform();">
+
+                    <center>
+                        <h2>Customer Info</h2>
+                    </center>
+
+                    <b>Name :</b>
+                    <input type="text" name="username" id="username" data-clear-btn="true"
+                        placeholder="Full Name" /><br>
+
+
+                    <b>Address :</b>
+                    <textarea name="useraddress" id="useraddress" data-clear-btn="true"
+                        placeholder="Street Route, Street name, Postcode, City." rows="9"></textarea>
+                    <br>
+
+                    <b>State :</b>
+                    <select name="urstate" id="urstate">
+                        <option value="">--Choose One--</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Penang">Penang</option>
+						<option value="Kelantan">Kelantan</option>
+						<option value="Kelantan">Kuala Lumpur</option>
+						<option value="Pahang">Pahang</option>
+                    </select>
+                    <br>
+
+                    <b>Telephone No :</b>
+                    <input type="text" name="userphoneno" id="userphoneno" data-clear-btn="true" maxlength="12"
+                        placeholder="012-34567890">
+                    <br>
+
+                    <b>Email :</b>
+                    <input type="email" name="useremail" id="useremail" data-clear-btn="true"
+                        placeholder="example@mail.com">
+                    <br>
+                    <br>
+
+                    <center>
+                        <h2>Order Info</h2>
+                        <h3>Item 1</h3>
+                    </center>
+
+
+                    <b>Product :</b>
+                    <select name="product1" id="product1">
+                        <<option value="">--Choose One--</option>
+                        <option value="">--Choose One--</option>
+                        <option value="one">Diorissimo Christian Dior</option>
+                        <option value="two">Bleu De chanel</option>
+                        <option value="three">Coco Mademoiselle</option>
+                        <option value="four">HUGO BOSS THE SCENT EDP FOR WOMEN</option>
+                        <option value="five">Gucci Oud Gucci</option>
+                        <option value="six">DIOR ( SAUVAGE PARFUM )</option>
+                        <option value="seven">VIKTOR & ROLF FLOWERBOMB</option>
+                        <option value="eight">JO MALONE ENGLISH PEAR & FREESIA COLOGNE</option>
+                        <option value="nine">PHILOSOPHY AMAZING GRACE </option>
+                        <option value="ten">JIMMY CHOO ILLICIT FLOWER</option>
+                        <option value="eleven">PACO RABANNE LADY MILLION</option>
+                        <option value="twelve">SCANDAL ( Jean Paul Gaultter )</option>
+                    </select>
+                    <br>
+
+                    <b>Unit Price:</b></a>
+                    <select name="price1" id="price1">
+                        <option value="one">RM 276</option>
+                        <option value="two">RM 386</option>
+                        <option value="three">RM 450</option>
+                        <option value="four">RM 488</option>
+                        <option value="five">RM 489</option>
+                        <option value="six">RM 560</option>
+                        <option value="seven">RM 579</option>
+                        <option value="eight">RM 588</option>
+                        <option value="nine">RM 645 </option>
+                        <option value="ten">RM 678</option>
+                        <option value="eleven">RM 765</option>
+                    </select>
+                    <br>
+
+
+                    <b>Quantity :</b>
+                    <input type="number" name="quantity1" id="quantity1" size="4" placeholder="Insert number only">
+                    <br>
+
+                    <center>
+                        <h3>Item 2 [optional]</h3>
+                    </center>
+
+                    <b>Product :</b>
+                    <select name="product2" id="product2">
+                        <option value="">--Choose One--</option>
+                        <option value="">--Choose One--</option>
+                        <option value="one">Diorissimo Christian Dior</option>
+                        <option value="two">Bleu De chanel</option>
+                        <option value="three">Coco Mademoiselle</option>
+                        <option value="four">HUGO BOSS THE SCENT EDP FOR WOMEN</option>
+                        <option value="five">Gucci Oud Gucci</option>
+                        <option value="six">DIOR ( SAUVAGE PARFUM )</option>
+                        <option value="seven">VIKTOR & ROLF FLOWERBOMB</option>
+                        <option value="eight">JO MALONE ENGLISH PEAR & FREESIA COLOGNE</option>
+                        <option value="nine">PHILOSOPHY AMAZING GRACE </option>
+                        <option value="ten">JIMMY CHOO ILLICIT FLOWER</option>
+                        <option value="eleven">PACO RABANNE LADY MILLION</option>
+                        <option value="twelve">SCANDAL ( Jean Paul Gaultter )</option>
+                    </select>
+                    <br>
+
+
+                    <b>Unit Price:</b></a>
+                    <select name="price2" id="price2">
+                        <option value="one">RM 276.00</option>
+                        <option value="two">RM 386</option>
+                        <option value="three">RM 450</option>
+                        <option value="four">RM 488</option>
+                        <option value="five">RM 489</option>
+                        <option value="six">RM 560</option>
+                        <option value="seven">RM 579</option>
+                        <option value="eight">RM 588</option>
+                        <option value="nine">RM 645 </option>
+                        <option value="ten">RM 678</option>
+                        <option value="eleven">RM 765</option>
+                    </select>
+                    <br>
+
+                    <b>Quantity :</b>
+                    <input type="number" name="quantity2" id="quantity2" size="4" placeholder="Insert number only">
+                    <br>
+
+                    <center><button class="ui-btn ui-btn-inline" type="submit" value="Submit">SEND</button>
+
+                        <button class="ui-btn ui-btn-inline" type="reset" value="Reset">RESET</button>
+                    </center>
+
+                </form>
+            </div>
+        </center>
+    </div>
+    <div data-role="footer" data-theme="a" id="footer">
+        <h1></h1>
+        <a class="ui-btn ui-btn-right ui-btn-inline ui-icon-home ui-btn-icon-left"
+            onclick="location.href = 'home.html';">Back to Homepage</a>
+    </div>
+
+    <script>
+        function onsubmitform() {
+
+            var name = document.getElementById("username").value;
+            var address = document.getElementById("useraddress").value;
+            var state = document.getElementById("urstate").value;
+            var phonenumber = document.getElementById("userphoneno").value;
+            var email = document.getElementById("useremail").value;
+
+            //item1
+            product1 = document.getElementById("product1").value;
+            price1 = parseFloat(document.getElementById("price1").value);
+            quantity1 = parseInt(document.getElementById("quantity1").value);
+
+            //item2
+            product2 = document.getElementById("product2").value;
+            price2 = parseFloat(document.getElementById("price2").value);
+            quantity2 = parseInt(document.getElementById("quantity2").value);
+
+
+            if (name && address && state && phonenumber && email && product1 && price1 && quantity1 && product2 && price2 && quantity2) {
+                if (confirm("Are you confirm to submit?")) {
+                    alert("Your details already be submitted");
+
+                    var result, result2, total;
+                    result = price1 * quantity1;
+                    result2 = price2 * quantity2;
+                    total = result + result2;
+
+                    alert("Name : " + name + "\nAddress : " + address + "\nState : " + state + "\nTelephone No : " + phonenumber + "\nEmail : " + email + "\n\nProduct item 1 : " + product1 +  "\nTotal Price: RM" + result + "\n\nProduct item 2 : " + product2 +  "\nTotal Price : RM" + result2 + "\n\nGrand Total : RM" + total);
+
+                }
+                else {
+                    alert("Your details still no submitted");
+                }
+            }
+            else if (name && address && state && phonenumber && email && product1 && price1 && quantity1) {
+                if (confirm("Are you confirm to submit?")) {
+                    alert("Your details already be submitted");
+
+                    var result1, total;
+                    result1 = price1 * quantity1;
+                    total = result1;
+
+                    alert("Name : " + name + "\nAddress : " + address + "\nState : " + state + "\nTelephone No : " + phonenumber + "\nEmail : " + email + "\n\nProduct item 1 : " + product1 +  "\nTotal Price: RM" + result1 + "\n\nGrand Total : RM" + total);
+
+                }
+                else {
+                    alert("Your details still no submitted");
+                }
+            }
+            else {
+                alert("Incomplete Form!");
+            }
+
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>

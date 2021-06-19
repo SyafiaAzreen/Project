@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFUME PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.10.0.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 500px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .8} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .8} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 100px) {
+          .text {font-size: 11px}
+        }
+        </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">WELCOME TO SILKY AROMA </h1>
+
+    <ul class="menu_ul">
+    <ul class="menu_ul li">
+    <ul class="menu_ul a">
+    <ul class="menu_ul a:hover">
+
+        <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+        <li menu="menu_ul"><a href="gallery.html" target="location">List of Product</a></li>
+        <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+        <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+    </ul>
+    </ul>
+    </ul>
+    </ul>
+    <marquee direction="left" bgcolor="darkSalmon" loop="7" height="30px">CHOOSE YOUR PERFUME NOW !!!!!
+    </marquee>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="back8.jpg" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="back5.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="back6.jpg" style="width:100%">
+         
+        </div>
+        </div>
+      
+        
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        </script>
+        
+        <div class="column center">
+          <h2>PERFUME</h2>
+          <p> The use of perfume as a cosmetic dates back centuries upon centuries, with the term “perfume” originating from the Latin word, 
+            “per fumus”, which means “through smoke.” This refers to the earliest use of perfume, incense, which was employed by ancient cultures 
+            in Mesopotamia and Egypt at religious ceremonies, 
+            and eventually evolved into the practice of extracting essential oils for use on the body. </p>
+          <p> Nowadays, the perfume industry has exploded into a multi-million-dollar business. Smelling good is a prime concern in our society; 
+            and with the thousands of perfumes available, it’s also become an important method of self-expression and individuality.
+            It is difficult to avoid fragrance even if one wishes to do so: Aside 
+            from perfumes and colognes proper, essential oil blends are used to distinguish a wide variety of cosmetics and bath essentials.</p>
+          <p> Amid all this variety, it’s easy to get confused choosing a scent—and it’s also easy to forget that the perfumes you are testing 
+            were created via a process that is considered a bona fide art. Let’s break down the (surprisingly elaborate) process of what 
+            is inside those beautiful glass bottles.</p>
+      </div>
+</body>
+</html>
